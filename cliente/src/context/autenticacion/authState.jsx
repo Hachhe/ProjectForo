@@ -23,6 +23,7 @@ const AuthState = props => {
 
     const [state, dispatch] = useReducer(authReducer, initialState);
 
+
     const crearUsuario = async datos =>{
         try {
             const respuesta = await clienteAxios.post('/api/usuarios',datos);
